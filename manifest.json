@@ -1,0 +1,34 @@
+{
+  "manifest_version": 2,
+  "description": "Nicer editor for opsworks stack settings",
+  "name": "Opsworks JSON editor",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://console.aws.amazon.com/opsworks/*"
+      ],
+      "css": [
+        "jsoneditor.min.css"
+      ],
+      "js": [
+        "jquery.min.js",
+        "ace.js",
+        "jsoneditor.min.js",
+        "editor.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "tabs",
+    "https://console.aws.amazon.com/*"
+  ],
+  "version": "0.1",
+  "web_accessible_resources": [
+    "jquery.min.js",
+    "ace.js",
+    "jsoneditor.min.js",
+    "editor.js",
+    "img/*.png",
+    "jsoneditor.map"
+  ]
+}
