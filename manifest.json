@@ -7,13 +7,8 @@
       "matches": [
         "https://console.aws.amazon.com/opsworks/*"
       ],
-      "css": [
-        "jsoneditor.min.css"
-      ],
       "js": [
         "jquery.min.js",
-        "ace.js",
-        "jsoneditor.min.js",
         "editor.js"
       ]
     }
@@ -24,11 +19,10 @@
   ],
   "version": "0.1",
   "web_accessible_resources": [
-    "jquery.min.js",
-    "ace.js",
-    "jsoneditor.min.js",
-    "editor.js",
+    "jsoneditor.min.css",
+    "editor-iframe.html",
     "img/*.png",
+    "*.js",
     "jsoneditor.map"
   ]
 }
